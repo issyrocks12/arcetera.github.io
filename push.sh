@@ -4,3 +4,10 @@
 dpkg-scanpackages -m debs / > Packages
 
 bzip2 -fks Packages
+
+git add .
+
+read -p "Enter commit title: "  commit
+git commit -m "$username"
+
+git push
